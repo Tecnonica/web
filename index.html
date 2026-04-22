@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnonica - Enlaces y Ubicación</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --azul-claro: #00AEEF;
+            --azul-oscuro: #005f8d;
+            --verde-lima: #32CD32;
+            --blanco: #FFFFFF;
+            --cristal: rgba(255, 255, 255, 0.15);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(180deg, var(--azul-claro) 0%, var(--azul-oscuro) 100%);
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            color: var(--blanco);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 420px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .logo-header {
+            margin-bottom: 25px;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .logo-img {
+            max-width: 160px;
+            height: auto;
+            border-radius: 8px;
+            /* Sombra para que el logo resalte sobre el azul */
+            filter: drop-shadow(0px 4px 10px rgba(0,0,0,0.3));
+        }
+
+        .follow-us-text {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+            opacity: 0.95;
+        }
+
+        .hashtag-inline {
+            color: var(--verde-lima);
+            font-weight: bold;
+        }
+
+        /* Botones de Enlaces */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link-card, .info-box {
+            background: var(--cristal);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            animation: fadeInUp 0.5s ease-out backwards;
+        }
+
+        .link-card {
+            border-radius: 50px;
+            padding: 14px 25px;
+            text-decoration: none;
+            color: var(--blanco);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .link-card i {
+            font-size: 1.3rem;
+            width: 32px;
+            margin-right: 12px;
+        }
+
+        .link-card:hover {
+            background: var(--blanco);
+            color: var(--azul-claro);
+            transform: translateY(-3px);
+            border-color: var(--verde-lima);
+        }
+
+        /* Recuadro de Visítanos (Estilo idéntico a los botones) */
+        .info-box {
+            border-radius: 20px;
+            padding: 22px;
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        .section-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 30px 0 10px;
+            opacity: 0.8;
+        }
+
+        .info-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 18px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .info-item i {
+            color: var(--verde-lima);
+            font-size: 1.2rem;
+            margin-top: 3px;
+        }
+
+        .map-btn {
+            background: var(--verde-lima);
+            color: #000;
+            border-radius: 12px;
+            padding: 12px;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 0.95rem;
+            margin-top: 10px;
+            transition: transform 0.2s;
+        }
+
+        .map-btn:hover {
+            transform: scale(1.02);
+            filter: brightness(1.1);
+        }
+
+        /* Animaciones */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="logo-header">
+            <img src="SMALL_LOGO.png" alt="Tecnonica" class="logo-img">
+        </header>
+
+        <div class="follow-us-text">
+            Síguenos en nuestras redes <span class="hashtag-inline">#tecnonica</span>
+        </div>
+
+        <nav class="links-container">
+            <a href="https://api.whatsapp.com/send?phone=50585331025" class="link-card" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://www.facebook.com/tecnonica" class="link-card" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/tecnonica.leon" class="link-card" target="_blank">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+            <a href="https://www.tiktok.com/@tecnonica.leon" class="link-card" target="_blank">
+                <i class="fa-brands fa-tiktok"></i> TikTok
+            </a>
+        </nav>
+
+        <div class="section-title">Visítanos</div>
+        <div class="info-box">
+            <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    Costado Sur del Colegio la Salle 50vrs abajo<br>
+                    Sobre la Calle Real, León, Nicaragua.
+                </div>
+            </div>
+            
+            <a href="https://goo.gl/maps/CxcnKPHC2vZ3tVio8" class="map-btn" target="_blank">
+                <i class="fa-solid fa-map-location-dot" style="margin-right: 10px; color: inherit;"></i> Ver ubicación en Maps
+            </a>
+
+            <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.2); margin: 20px 0;">
+
+            <div class="info-item">
+                <i class="fa-solid fa-clock"></i>
+                <div>
+                    <strong>Horario de Atención:</strong><br>
+                    Lun - Vie: 8:00 am a 6:00 pm<br>
+                    Sábados: 8:00 am a 3:00 pm
+                </div>
+            </div>
+        </div>
+
+        <footer style="margin-top: 40px; font-size: 0.8rem; opacity: 0.6;">
+            TECNONICA © 2026 | León, Nicaragua
+        </footer>
+    </div>
+
+</body>
+</html>
